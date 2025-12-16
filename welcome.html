@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' file: data:; style-src 'self' 'unsafe-inline';">
+<style>
+  html,body{height:100%}
+  body{
+    margin:0;
+    background:transparent;
+    display:grid;
+    place-items:center;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+  }
+  .wrap{
+    position:relative;
+    width:min(720px,92vw);
+    height:auto;
+  }
+  .card{
+    background:#dd7d00;
+    color:#ffffff;
+    border:3px solid #000;
+    border-radius:5px;
+    padding:28px 24px 24px 24px;
+    box-sizing:border-box;
+    box-shadow:0 12px 40px rgba(0,0,0,.18);
+  }
+  h1{
+    margin:0 0 12px 0;
+    font-size:36px;
+    line-height:1.1;
+    font-weight:800;
+    text-align:left;
+  }
+  p{
+    margin:8px 0;
+    font-size:16px;
+    line-height:1.45;
+  }
+  .oranges{
+    position:absolute;
+    left:-12px;
+    top:-32px;
+    width:164px;
+    height:152px;
+    pointer-events:none;
+    user-select:none;
+  }
+  .content{
+    margin-left:140px;
+  }
+  @media (max-width:600px){
+    .content{ margin-left:0 }
+    .oranges{ display:none }
+    h1{ font-size:28px }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <img class="oranges" src="./oranges.png" width="164" height="152" alt="">
+    <div class="card">
+      <div class="content">
+        <h1>Welcome to OpenOverlay</h1>
+        <p>This project exists for all the streamers who love Tangia, but also love linux! Right click on the OpenOverlay tray icon to set your Tangia Overlay URL</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

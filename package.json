@@ -1,0 +1,27 @@
+{
+  "name": "openoverlay",
+  "version": "1.0.4",
+  "main": "main.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux AppImage"
+  },
+  "devDependencies": {
+    "electron": "^31.3.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.openoverlay.app",
+    "productName": "OpenOverlay",
+    "linux": {
+      "target": "AppImage",
+      "category": "Utility",
+      "icon": "build/icons",
+      "desktop": {
+        "StartupWMClass": "OpenOverlay"
+      }
+    }
+  }
+}
